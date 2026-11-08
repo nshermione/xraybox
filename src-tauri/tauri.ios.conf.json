@@ -1,0 +1,9 @@
+{
+  "bundle": {
+    "externalBin": [],
+    "iOS": {
+      "minimumSystemVersion": "17.0",
+      "developmentTeam": "5R6CYCG995"
+    }
+  }
+}

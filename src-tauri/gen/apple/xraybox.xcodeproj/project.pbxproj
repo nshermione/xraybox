@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02491BA4902BD6A7E8469D97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72710C1BD46FBE053573A015 /* LaunchScreen.storyboard */; };
+		13ACCBEBD99F49FE1FBEC073 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ADE8F161E82BEA57776DF7A /* Metal.framework */; };
+		1AE7F00D8989D6F56C602BC4 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 66514237171C8E0421485C27 /* assets */; };
+		3E794915DE06A35ADE95BE99 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD98ABEC4851742293BF9F46 /* NetworkExtension.framework */; };
+		54B1A2E813EA248B91471D43 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CECEF61A4482C33801A5009D /* libresolv.tbd */; };
+		55277C696A3F79B784A39024 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA169611373722CE286B9C5C /* main.mm */; };
+		56C4742FF1B000D7F0026697 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A595FD5CA982BAE82BC2FC /* QuartzCore.framework */; };
+		76070122EF3D25F07BAA6E55 /* PacketTunnel.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DB9331BBA09A825F5F7E7D12 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		83BBFB699B265ECFE6761012 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD98ABEC4851742293BF9F46 /* NetworkExtension.framework */; };
+		849EADD1E232F9663309C097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4229D01CC6DC00C041C896F7 /* Assets.xcassets */; };
+		85220D2F55E0095FD0DCEFF0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7667D03B003C68068778254 /* WebKit.framework */; };
+		86458E9ED6AA9583F8E9535F /* libapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD65CC4FEBBEEDAA3F52779C /* libapp.a */; };
+		934D285482E9960F607230D1 /* HevTunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2782998CCADDB2628E6869 /* HevTunnel.swift */; };
+		9E0C231BF930C86A2BEEB673 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5BE2DA47131AA148A1500C2 /* CoreGraphics.framework */; };
+		BACF1F062215A4C3E03EEAD5 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C608F8CFCA2ECD78E88987E /* AppGroup.swift */; };
+		BF97474DB58F2846E01BC538 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E5C039136019D124B2DD3D /* PacketTunnelProvider.swift */; };
+		CCAC2BC508F5B50C5CDCBAB4 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F54616643E867047CA7EDA30 /* MetalKit.framework */; };
+		E055AE952E4A2BA68C03CFC3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3CBBFEEFFC2D01B03A8CA7 /* Security.framework */; };
+		F40996F11CDC4B50736D8696 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65ED856F16755F7078B71F5E /* UIKit.framework */; };
+		FDA539AD7D04D1B9AC671D64 /* utun_fd.c in Sources */ = {isa = PBXBuildFile; fileRef = FC7E9F8CB9EDD00FB5CE31B4 /* utun_fd.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49486B271D5D85944B4B3AE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DAB042AC1323DF46FAF744D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6A85C6FFB3CC2275DF3755A;
+			remoteInfo = PacketTunnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55A424DB35B0B1AF9D4875BF /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				76070122EF3D25F07BAA6E55 /* PacketTunnel.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		001FA53E03BDEE522AB411D4 /* libapp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libapp.a; sourceTree = "<group>"; };
+		032E6FD72AC0647DDC117622 /* mod.rs */ = {isa = PBXFileReference; path = mod.rs; sourceTree = "<group>"; };
+		0834F8A4948DA3CEFEE470D2 /* state.rs */ = {isa = PBXFileReference; path = state.rs; sourceTree = "<group>"; };
+		0DF541F895D54685197DDE68 /* store.rs */ = {isa = PBXFileReference; path = store.rs; sourceTree = "<group>"; };
+		1716B52F76805C39604791A4 /* xraybox_iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = xraybox_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2473D04D25814A4C6CC6EBF1 /* windows.rs */ = {isa = PBXFileReference; path = windows.rs; sourceTree = "<group>"; };
+		252095C286CB5DB1AFE0A244 /* store.rs */ = {isa = PBXFileReference; path = store.rs; sourceTree = "<group>"; };
+		25A87DDDD622D1F833BA1308 /* lib.rs */ = {isa = PBXFileReference; path = lib.rs; sourceTree = "<group>"; };
+		25DE4697F2E6BD5E524CD911 /* single_instance.rs */ = {isa = PBXFileReference; path = single_instance.rs; sourceTree = "<group>"; };
+		282AF8A5D75E3EC357CDBAA4 /* country.rs */ = {isa = PBXFileReference; path = country.rs; sourceTree = "<group>"; };
+		2F88A82648943531845157A9 /* credentials.rs */ = {isa = PBXFileReference; path = credentials.rs; sourceTree = "<group>"; };
+		32DA03AC3C531A7DAF7B647E /* http.rs */ = {isa = PBXFileReference; path = http.rs; sourceTree = "<group>"; };
+		35ED895F79B30D14F70DC1DC /* dns.rs */ = {isa = PBXFileReference; path = dns.rs; sourceTree = "<group>"; };
+		3B04E2241F5823AC9D549AED /* compile.rs */ = {isa = PBXFileReference; path = compile.rs; sourceTree = "<group>"; };
+		3DADAA2FDAEE3E08E3DD931E /* libapp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libapp.a; sourceTree = "<group>"; };
+		417B2B5304C3B0A24A88C8D3 /* action.rs */ = {isa = PBXFileReference; path = action.rs; sourceTree = "<group>"; };
+		42122F11C01AFCB1B09E112D /* mod.rs */ = {isa = PBXFileReference; path = mod.rs; sourceTree = "<group>"; };
+		4229D01CC6DC00C041C896F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4397C92B6927535F95032E87 /* android.rs */ = {isa = PBXFileReference; path = android.rs; sourceTree = "<group>"; };
+		45C0FD0418A0C26634D780B6 /* mod.rs */ = {isa = PBXFileReference; path = mod.rs; sourceTree = "<group>"; };
+		47F6747F63326D886E159250 /* firewall.rs */ = {isa = PBXFileReference; path = firewall.rs; sourceTree = "<group>"; };
+		4BB4772FD1065F22DC2BB281 /* process.rs */ = {isa = PBXFileReference; path = process.rs; sourceTree = "<group>"; };
+		4E1AFFBB3EE95ABE92ABDE6A /* kill_switch.rs */ = {isa = PBXFileReference; path = kill_switch.rs; sourceTree = "<group>"; };
+		503FE05DA3CF48525E16A211 /* ios.rs */ = {isa = PBXFileReference; path = ios.rs; sourceTree = "<group>"; };
+		5193C61D467CA326C9A67F1A /* helper.rs */ = {isa = PBXFileReference; path = helper.rs; sourceTree = "<group>"; };
+		57A416A39AB81C0E30098AC5 /* refresh.rs */ = {isa = PBXFileReference; path = refresh.rs; sourceTree = "<group>"; };
+		59C668324F766B05B5C96DFD /* mod.rs */ = {isa = PBXFileReference; path = mod.rs; sourceTree = "<group>"; };
+		62307DF652785BAC1803D2CA /* commands.rs */ = {isa = PBXFileReference; path = commands.rs; sourceTree = "<group>"; };
+		6516139E20640728EA1D56C8 /* ruleset.rs */ = {isa = PBXFileReference; path = ruleset.rs; sourceTree = "<group>"; };
+		65ED856F16755F7078B71F5E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		66514237171C8E0421485C27 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = SOURCE_ROOT; };
+		67A595FD5CA982BAE82BC2FC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		72710C1BD46FBE053573A015 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8ADE8F161E82BEA57776DF7A /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		8C4F9013540078CECFA0C778 /* brands.rs */ = {isa = PBXFileReference; path = brands.rs; sourceTree = "<group>"; };
+		8DB54F4AC798BD99A47A83B2 /* autostart.rs */ = {isa = PBXFileReference; path = autostart.rs; sourceTree = "<group>"; };
+		8EFCE3A9FDCEFCCB9A07F8F5 /* share.rs */ = {isa = PBXFileReference; path = share.rs; sourceTree = "<group>"; };
+		9080978177A7A1463B9CB3B0 /* tray.rs */ = {isa = PBXFileReference; path = tray.rs; sourceTree = "<group>"; };
+		90E5C039136019D124B2DD3D /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		920E8D6DDDF59904491FA9D1 /* pf.rs */ = {isa = PBXFileReference; path = pf.rs; sourceTree = "<group>"; };
+		9C608F8CFCA2ECD78E88987E /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
+		9E14BB5AE3871F20AA02DE6D /* community.rs */ = {isa = PBXFileReference; path = community.rs; sourceTree = "<group>"; };
+		A3FF32618E2E422182BEA8CD /* socket.rs */ = {isa = PBXFileReference; path = socket.rs; sourceTree = "<group>"; };
+		AB66645C81B675397F65130E /* error.rs */ = {isa = PBXFileReference; path = error.rs; sourceTree = "<group>"; };
+		B30926686F4051F45ACF73AC /* mod.rs */ = {isa = PBXFileReference; path = mod.rs; sourceTree = "<group>"; };
+		BAE77AB3FF87F69D7BD01FD3 /* main.rs */ = {isa = PBXFileReference; path = main.rs; sourceTree = "<group>"; };
+		C12631D6CFDAC093A328EED0 /* ping.rs */ = {isa = PBXFileReference; path = ping.rs; sourceTree = "<group>"; };
+		CBDAB0FA17108DB8025FE316 /* app_log.rs */ = {isa = PBXFileReference; path = app_log.rs; sourceTree = "<group>"; };
+		CD65CC4FEBBEEDAA3F52779C /* libapp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libapp.a; sourceTree = "<group>"; };
+		CECEF61A4482C33801A5009D /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		D5EF13160EE0C82A5D1D388E /* leak_guard.rs */ = {isa = PBXFileReference; path = leak_guard.rs; sourceTree = "<group>"; };
+		D7667D03B003C68068778254 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		D9B6974CED5EB1A7AD91BC47 /* vless.rs */ = {isa = PBXFileReference; path = vless.rs; sourceTree = "<group>"; };
+		DB2782998CCADDB2628E6869 /* HevTunnel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HevTunnel.swift; sourceTree = "<group>"; };
+		DB9331BBA09A825F5F7E7D12 /* PacketTunnel.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD896A13324FEC29861407C /* settings.rs */ = {isa = PBXFileReference; path = settings.rs; sourceTree = "<group>"; };
+		DCE037941A3A8849C5E5EB3F /* bindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bindings.h; sourceTree = "<group>"; };
+		E1643E6B017940037387F2B6 /* subscription.rs */ = {isa = PBXFileReference; path = subscription.rs; sourceTree = "<group>"; };
+		E30ED5ACD70189FC091BC2D7 /* paths.rs */ = {isa = PBXFileReference; path = paths.rs; sourceTree = "<group>"; };
+		E5BE2DA47131AA148A1500C2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA169611373722CE286B9C5C /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		EC49597F3ED3C2053DE46A8E /* config.rs */ = {isa = PBXFileReference; path = config.rs; sourceTree = "<group>"; };
+		ED3CBBFEEFFC2D01B03A8CA7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EF6B0DD167DD1682756142C5 /* store.rs */ = {isa = PBXFileReference; path = store.rs; sourceTree = "<group>"; };
+		F51F83738B111410F46248C2 /* mod.rs */ = {isa = PBXFileReference; path = mod.rs; sourceTree = "<group>"; };
+		F54616643E867047CA7EDA30 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		F803178721FB98A66BCB1B47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F864C3581FE2496547F075B7 /* catalog.rs */ = {isa = PBXFileReference; path = catalog.rs; sourceTree = "<group>"; };
+		F96144AEF38AFDCB803F36E1 /* xraybox_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = xraybox_iOS.entitlements; sourceTree = "<group>"; };
+		FA7253C09153806969E0E987 /* xray_api.rs */ = {isa = PBXFileReference; path = xray_api.rs; sourceTree = "<group>"; };
+		FC7E9F8CB9EDD00FB5CE31B4 /* utun_fd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = utun_fd.c; sourceTree = "<group>"; };
+		FD98ABEC4851742293BF9F46 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0AC1AF502206F44E39C65DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E794915DE06A35ADE95BE99 /* NetworkExtension.framework in Frameworks */,
+				54B1A2E813EA248B91471D43 /* libresolv.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE4038A48EB8F13F2444D0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86458E9ED6AA9583F8E9535F /* libapp.a in Frameworks */,
+				9E0C231BF930C86A2BEEB673 /* CoreGraphics.framework in Frameworks */,
+				13ACCBEBD99F49FE1FBEC073 /* Metal.framework in Frameworks */,
+				CCAC2BC508F5B50C5CDCBAB4 /* MetalKit.framework in Frameworks */,
+				56C4742FF1B000D7F0026697 /* QuartzCore.framework in Frameworks */,
+				E055AE952E4A2BA68C03CFC3 /* Security.framework in Frameworks */,
+				F40996F11CDC4B50736D8696 /* UIKit.framework in Frameworks */,
+				85220D2F55E0095FD0DCEFF0 /* WebKit.framework in Frameworks */,
+				83BBFB699B265ECFE6761012 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ABA9827A6247463BF9A432C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9C608F8CFCA2ECD78E88987E /* AppGroup.swift */,
+			);
+			name = Sources;
+			path = ../../ios/plugin/Sources;
+			sourceTree = "<group>";
+		};
+		24373F8B07B500397475263B /* engine */ = {
+			isa = PBXGroup;
+			children = (
+				4397C92B6927535F95032E87 /* android.rs */,
+				CBDAB0FA17108DB8025FE316 /* app_log.rs */,
+				8DB54F4AC798BD99A47A83B2 /* autostart.rs */,
+				62307DF652785BAC1803D2CA /* commands.rs */,
+				EC49597F3ED3C2053DE46A8E /* config.rs */,
+				AB66645C81B675397F65130E /* error.rs */,
+				47F6747F63326D886E159250 /* firewall.rs */,
+				503FE05DA3CF48525E16A211 /* ios.rs */,
+				4E1AFFBB3EE95ABE92ABDE6A /* kill_switch.rs */,
+				D5EF13160EE0C82A5D1D388E /* leak_guard.rs */,
+				42122F11C01AFCB1B09E112D /* mod.rs */,
+				4BB4772FD1065F22DC2BB281 /* process.rs */,
+				DCD896A13324FEC29861407C /* settings.rs */,
+				0834F8A4948DA3CEFEE470D2 /* state.rs */,
+				2473D04D25814A4C6CC6EBF1 /* windows.rs */,
+				FA7253C09153806969E0E987 /* xray_api.rs */,
+				2BF6719286287C641DD22FCD /* macos */,
+			);
+			path = engine;
+			sourceTree = "<group>";
+		};
+		2BF6719286287C641DD22FCD /* macos */ = {
+			isa = PBXGroup;
+			children = (
+				35ED895F79B30D14F70DC1DC /* dns.rs */,
+				5193C61D467CA326C9A67F1A /* helper.rs */,
+				032E6FD72AC0647DDC117622 /* mod.rs */,
+				E30ED5ACD70189FC091BC2D7 /* paths.rs */,
+				920E8D6DDDF59904491FA9D1 /* pf.rs */,
+			);
+			path = macos;
+			sourceTree = "<group>";
+		};
+		2E128979F5143AB6DADD1C29 /* client_api */ = {
+			isa = PBXGroup;
+			children = (
+				2F88A82648943531845157A9 /* credentials.rs */,
+				32DA03AC3C531A7DAF7B647E /* http.rs */,
+				45C0FD0418A0C26634D780B6 /* mod.rs */,
+				57A416A39AB81C0E30098AC5 /* refresh.rs */,
+				A3FF32618E2E422182BEA8CD /* socket.rs */,
+			);
+			path = client_api;
+			sourceTree = "<group>";
+		};
+		400003F769B2D1B8B18F35F8 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				282AF8A5D75E3EC357CDBAA4 /* country.rs */,
+				59C668324F766B05B5C96DFD /* mod.rs */,
+				C12631D6CFDAC093A328EED0 /* ping.rs */,
+				8EFCE3A9FDCEFCCB9A07F8F5 /* share.rs */,
+				EF6B0DD167DD1682756142C5 /* store.rs */,
+				E1643E6B017940037387F2B6 /* subscription.rs */,
+				D9B6974CED5EB1A7AD91BC47 /* vless.rs */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		4738171C03DBA46EEBE85A39 /* bindings */ = {
+			isa = PBXGroup;
+			children = (
+				DCE037941A3A8849C5E5EB3F /* bindings.h */,
+			);
+			path = bindings;
+			sourceTree = "<group>";
+		};
+		4875518D0E344149DF53CAB1 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				DB2782998CCADDB2628E6869 /* HevTunnel.swift */,
+				90E5C039136019D124B2DD3D /* PacketTunnelProvider.swift */,
+				FC7E9F8CB9EDD00FB5CE31B4 /* utun_fd.c */,
+			);
+			name = ios;
+			path = ../../ios;
+			sourceTree = "<group>";
+		};
+		4BE810A84278658ACE35E091 /* arm64 */ = {
+			isa = PBXGroup;
+			children = (
+				6D6293DE7F245296C664DEE2 /* debug */,
+				92AFD9542C45D772F0EC7131 /* release */,
+			);
+			path = arm64;
+			sourceTree = "<group>";
+		};
+		69DDCB5E804BA0432E809CB2 /* routing */ = {
+			isa = PBXGroup;
+			children = (
+				417B2B5304C3B0A24A88C8D3 /* action.rs */,
+				8C4F9013540078CECFA0C778 /* brands.rs */,
+				F864C3581FE2496547F075B7 /* catalog.rs */,
+				3B04E2241F5823AC9D549AED /* compile.rs */,
+				F51F83738B111410F46248C2 /* mod.rs */,
+				6516139E20640728EA1D56C8 /* ruleset.rs */,
+				252095C286CB5DB1AFE0A244 /* store.rs */,
+			);
+			path = routing;
+			sourceTree = "<group>";
+		};
+		6D6293DE7F245296C664DEE2 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				001FA53E03BDEE522AB411D4 /* libapp.a */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		6FDED8065A9B37C92F773FC1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				73011CEF0EF7B8BC02873BF0 /* xraybox */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		73011CEF0EF7B8BC02873BF0 /* xraybox */ = {
+			isa = PBXGroup;
+			children = (
+				EA169611373722CE286B9C5C /* main.mm */,
+				4738171C03DBA46EEBE85A39 /* bindings */,
+			);
+			path = xraybox;
+			sourceTree = "<group>";
+		};
+		798A5FE7DAFC0CB175EB4550 = {
+			isa = PBXGroup;
+			children = (
+				66514237171C8E0421485C27 /* assets */,
+				4229D01CC6DC00C041C896F7 /* Assets.xcassets */,
+				72710C1BD46FBE053573A015 /* LaunchScreen.storyboard */,
+				9AFB0A01D5ED67C0092923D9 /* Externals */,
+				4875518D0E344149DF53CAB1 /* ios */,
+				6FDED8065A9B37C92F773FC1 /* Sources */,
+				1ABA9827A6247463BF9A432C /* Sources */,
+				8B552C88EA437776BC098EDE /* src */,
+				D719D7F040B4575CF1530AAE /* xraybox_iOS */,
+				8EE930E214DD84AB4D09D9FF /* Frameworks */,
+				C2FE40DB80F6BC78F70DC642 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B552C88EA437776BC098EDE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9E14BB5AE3871F20AA02DE6D /* community.rs */,
+				25A87DDDD622D1F833BA1308 /* lib.rs */,
+				BAE77AB3FF87F69D7BD01FD3 /* main.rs */,
+				25DE4697F2E6BD5E524CD911 /* single_instance.rs */,
+				9080978177A7A1463B9CB3B0 /* tray.rs */,
+				2E128979F5143AB6DADD1C29 /* client_api */,
+				99C9CB6F4935A49516431507 /* dns */,
+				24373F8B07B500397475263B /* engine */,
+				400003F769B2D1B8B18F35F8 /* profile */,
+				69DDCB5E804BA0432E809CB2 /* routing */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		8EE930E214DD84AB4D09D9FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5BE2DA47131AA148A1500C2 /* CoreGraphics.framework */,
+				CD65CC4FEBBEEDAA3F52779C /* libapp.a */,
+				CECEF61A4482C33801A5009D /* libresolv.tbd */,
+				8ADE8F161E82BEA57776DF7A /* Metal.framework */,
+				F54616643E867047CA7EDA30 /* MetalKit.framework */,
+				FD98ABEC4851742293BF9F46 /* NetworkExtension.framework */,
+				67A595FD5CA982BAE82BC2FC /* QuartzCore.framework */,
+				ED3CBBFEEFFC2D01B03A8CA7 /* Security.framework */,
+				65ED856F16755F7078B71F5E /* UIKit.framework */,
+				D7667D03B003C68068778254 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92AFD9542C45D772F0EC7131 /* release */ = {
+			isa = PBXGroup;
+			children = (
+				3DADAA2FDAEE3E08E3DD931E /* libapp.a */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		99C9CB6F4935A49516431507 /* dns */ = {
+			isa = PBXGroup;
+			children = (
+				B30926686F4051F45ACF73AC /* mod.rs */,
+				0DF541F895D54685197DDE68 /* store.rs */,
+			);
+			path = dns;
+			sourceTree = "<group>";
+		};
+		9AFB0A01D5ED67C0092923D9 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				4BE810A84278658ACE35E091 /* arm64 */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		C2FE40DB80F6BC78F70DC642 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB9331BBA09A825F5F7E7D12 /* PacketTunnel.appex */,
+				1716B52F76805C39604791A4 /* xraybox_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D719D7F040B4575CF1530AAE /* xraybox_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F803178721FB98A66BCB1B47 /* Info.plist */,
+				F96144AEF38AFDCB803F36E1 /* xraybox_iOS.entitlements */,
+			);
+			path = xraybox_iOS;
+			sourceTree = "<group>";
+		};
+		"TEMP_B89C4E7B-7BD1-472D-BEF7-0E5664118042" /* x86_64 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = x86_64;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F1EE38EF91448E9825CFF8E /* xraybox_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA7274DAB603ECA5698BE65A /* Build configuration list for PBXNativeTarget "xraybox_iOS" */;
+			buildPhases = (
+				70A26EEFCF6FE536B451EBCF /* Build Rust Code */,
+				655DE7407D8FDAF88AD8208B /* Sources */,
+				0625D4F9D005A1FBA4CD71D3 /* Resources */,
+				ACE4038A48EB8F13F2444D0E /* Frameworks */,
+				55A424DB35B0B1AF9D4875BF /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92D4A6AB57728D69415EC009 /* PBXTargetDependency */,
+			);
+			name = xraybox_iOS;
+			packageProductDependencies = (
+			);
+			productName = xraybox_iOS;
+			productReference = 1716B52F76805C39604791A4 /* xraybox_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6A85C6FFB3CC2275DF3755A /* PacketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2EA092D1B400221F8D67FBF /* Build configuration list for PBXNativeTarget "PacketTunnel" */;
+			buildPhases = (
+				5AFB7701B40C1D1349107FA2 /* Sources */,
+				A0AC1AF502206F44E39C65DE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacketTunnel;
+			packageProductDependencies = (
+			);
+			productName = PacketTunnel;
+			productReference = DB9331BBA09A825F5F7E7D12 /* PacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DAB042AC1323DF46FAF744D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1F1EE38EF91448E9825CFF8E = {
+						DevelopmentTeam = 5R6CYCG995;
+						ProvisioningStyle = Automatic;
+					};
+					A6A85C6FFB3CC2275DF3755A = {
+						DevelopmentTeam = 5R6CYCG995;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CDD464956CF06BF6938BB8E4 /* Build configuration list for PBXProject "xraybox" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 798A5FE7DAFC0CB175EB4550;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C2FE40DB80F6BC78F70DC642 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F1EE38EF91448E9825CFF8E /* xraybox_iOS */,
+				A6A85C6FFB3CC2275DF3755A /* PacketTunnel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0625D4F9D005A1FBA4CD71D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849EADD1E232F9663309C097 /* Assets.xcassets in Resources */,
+				02491BA4902BD6A7E8469D97 /* LaunchScreen.storyboard in Resources */,
+				1AE7F00D8989D6F56C602BC4 /* assets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70A26EEFCF6FE536B451EBCF /* Build Rust Code */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Rust Code";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Externals/x86_64/${CONFIGURATION}/libapp.a",
+				"$(SRCROOT)/Externals/arm64/${CONFIGURATION}/libapp.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "pnpm tauri ios xcode-script -v --platform ${PLATFORM_DISPLAY_NAME:?} --sdk-root ${SDKROOT:?} --framework-search-paths \"${FRAMEWORK_SEARCH_PATHS:?}\" --header-search-paths \"${HEADER_SEARCH_PATHS:?}\" --gcc-preprocessor-definitions \"${GCC_PREPROCESSOR_DEFINITIONS:-}\" --configuration ${CONFIGURATION:?} ${ARCHS:?}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AFB7701B40C1D1349107FA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BACF1F062215A4C3E03EEAD5 /* AppGroup.swift in Sources */,
+				934D285482E9960F607230D1 /* HevTunnel.swift in Sources */,
+				BF97474DB58F2846E01BC538 /* PacketTunnelProvider.swift in Sources */,
+				FDA539AD7D04D1B9AC671D64 /* utun_fd.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		655DE7407D8FDAF88AD8208B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55277C696A3F79B784A39024 /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92D4A6AB57728D69415EC009 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6A85C6FFB3CC2275DF3755A /* PacketTunnel */;
+			targetProxy = 49486B271D5D85944B4B3AE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5C22A419D3F40A36A884DFBE /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = debug;
+		};
+		8FAFE722915C172D672064A5 /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = xraybox_iOS/xraybox_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "5R6CYCG995";
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = xraybox_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/$(PLATFORM_NAME) $(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "$(inherited) $(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/$(PLATFORM_NAME) $(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.xraybox;
+				PRODUCT_NAME = "xraybox";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
+			};
+			name = debug;
+		};
+		B1986F3C2E57486D1BE2D62A /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = release;
+		};
+		C305B9F742CB8B7BA78A8334 /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = xraybox_iOS/xraybox_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "5R6CYCG995";
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = xraybox_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/$(PLATFORM_NAME) $(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "$(inherited) $(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/$(PLATFORM_NAME) $(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.xraybox;
+				PRODUCT_NAME = "xraybox";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
+			};
+			name = release;
+		};
+		DF7F331D8DD47208032C0A00 /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ../../ios/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R6CYCG995;
+				INFOPLIST_FILE = "../../ios/PacketTunnel-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/../../ios/Vendor";
+				OTHER_LDFLAGS = "$(inherited) -framework NetworkExtension -framework Security -framework CoreFoundation -lresolv -force_load $(PROJECT_DIR)/../../ios/Vendor/libxray.a -force_load $(PROJECT_DIR)/../../ios/Vendor/libhev-socks5-tunnel.a $(PROJECT_DIR)/../../ios/Vendor/src/hev-socks5-tunnel/third-part/hev-task-system/bin/libhev-task-system.a $(PROJECT_DIR)/../../ios/Vendor/src/hev-socks5-tunnel/third-part/lwip/bin/liblwip.a $(PROJECT_DIR)/../../ios/Vendor/src/hev-socks5-tunnel/third-part/yaml/bin/libyaml.a";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.xraybox.PacketTunnel;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "../../ios/PacketTunnel-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = release;
+		};
+		E8B273F26C48BCBE2C5967CA /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ../../ios/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5R6CYCG995;
+				INFOPLIST_FILE = "../../ios/PacketTunnel-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/../../ios/Vendor";
+				OTHER_LDFLAGS = "$(inherited) -framework NetworkExtension -framework Security -framework CoreFoundation -lresolv -force_load $(PROJECT_DIR)/../../ios/Vendor/libxray.a -force_load $(PROJECT_DIR)/../../ios/Vendor/libhev-socks5-tunnel.a $(PROJECT_DIR)/../../ios/Vendor/src/hev-socks5-tunnel/third-part/hev-task-system/bin/libhev-task-system.a $(PROJECT_DIR)/../../ios/Vendor/src/hev-socks5-tunnel/third-part/lwip/bin/liblwip.a $(PROJECT_DIR)/../../ios/Vendor/src/hev-socks5-tunnel/third-part/yaml/bin/libyaml.a";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.xraybox.PacketTunnel;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "../../ios/PacketTunnel-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA7274DAB603ECA5698BE65A /* Build configuration list for PBXNativeTarget "xraybox_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FAFE722915C172D672064A5 /* debug */,
+				C305B9F742CB8B7BA78A8334 /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+		CDD464956CF06BF6938BB8E4 /* Build configuration list for PBXProject "xraybox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C22A419D3F40A36A884DFBE /* debug */,
+				B1986F3C2E57486D1BE2D62A /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+		F2EA092D1B400221F8D67FBF /* Build configuration list for PBXNativeTarget "PacketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B273F26C48BCBE2C5967CA /* debug */,
+				DF7F331D8DD47208032C0A00 /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DAB042AC1323DF46FAF744D /* Project object */;
+}

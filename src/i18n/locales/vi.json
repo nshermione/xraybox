@@ -1,0 +1,299 @@
+{
+  "nav": {
+    "home": "VPN",
+    "settings": "Cài đặt"
+  },
+  "home": {
+    "title": "xraybox",
+    "server": "Máy chủ",
+    "session": "Phiên",
+    "duration": "Thời gian",
+    "usage": "Dung lượng",
+    "quota": "Gói data",
+    "currentIp": "IP hiện tại",
+    "vpnIp": "IP VPN",
+    "change": "Đổi",
+    "placeholder": "—",
+    "scan": "Quét QR",
+    "qrImage": "Ảnh QR",
+    "pickImage": "Chọn hình",
+    "add": "Thêm subscription",
+    "addSubscription": "Thêm subscription",
+    "subscriptionUrl": "URL subscription",
+    "subscriptionUrlPlaceholder": "https://",
+    "paste": "Dán",
+    "ping": "Ping",
+    "addLink": "Thêm link",
+    "cancel": "Hủy",
+    "yes": "Có",
+    "no": "Không",
+    "noServerTitle": "Chưa có máy chủ",
+    "noServerMessage": "Hãy thêm server trước. Quét QR hoặc dán link subscription."
+  },
+  "servers": {
+    "title": "Máy chủ",
+    "emptyTitle": "Chưa có máy chủ",
+    "emptyMessage": "Thêm subscription hoặc endpoint thủ công để bắt đầu.",
+    "recent": "Gần đây",
+    "all": "Tất cả máy chủ",
+    "country": "Quốc gia",
+    "profiles": "Profiles",
+    "other": "Khác",
+    "refreshPing": "Làm mới ping",
+    "updateSubscription": "Cập nhật subscription",
+    "update": "Cập nhật",
+    "ping": "Ping",
+    "updating": "Đang cập nhật subscription…",
+    "pinging": "Đang đo ping…",
+    "clearProfiles": "Xóa hết",
+    "clearConfirmTitle": "Xóa hết profiles?",
+    "clearConfirmMessage": "Mọi server đã import sẽ bị xóa. URL subscription vẫn giữ để anh cập nhật lại.",
+    "clearConfirm": "Xóa hết"
+  },
+  "subscription": {
+    "invalidUrl": "Nhập URL subscription bắt đầu bằng http:// hoặc https://.",
+    "invalidQr": "QR này không phải URL subscription.",
+    "noCamera": "Không dùng được camera. Hãy chọn hình.",
+    "clipboardDenied": "Không đọc được clipboard."
+  },
+  "fetchInterval": {
+    "title": "Auto subscription",
+    "listTitle": "Cập nhật subscription",
+    "selected": "Đã chọn",
+    "options": {
+      "3h": {
+        "title": "Mỗi 3 giờ",
+        "subtitle": "Làm mới danh sách node ba lần mỗi ngày"
+      },
+      "1d": {
+        "title": "Mỗi ngày",
+        "subtitle": "Làm mới một lần mỗi ngày"
+      },
+      "7d": {
+        "title": "Mỗi 7 ngày",
+        "subtitle": "Làm mới một lần mỗi tuần"
+      },
+      "off": {
+        "title": "Tắt",
+        "subtitle": "Chỉ khi mở app hoặc bấm refresh"
+      }
+    }
+  },
+  "settings": {
+    "title": "Cài đặt",
+    "groups": {
+      "general": "Chung",
+      "network": "Mạng",
+      "diagnostics": "Chẩn đoán"
+    },
+    "items": {
+      "auto-connect": {
+        "title": "Tự kết nối",
+        "subtitle": "Kết nối khi mở ứng dụng"
+      },
+      "start-boot": {
+        "title": "Khởi động cùng máy",
+        "subtitle": "Mở ứng dụng khi Windows đăng nhập",
+        "subtitleAndroid": "Kết nối lại VPN khi điện thoại khởi động",
+        "subtitleIos": "Dựng lại VPN sau khi mở khóa nếu lúc đó VPN vẫn đang bật"
+      },
+      "kill-switch": {
+        "title": "Internet kill switch",
+        "help": "Khi bật, mạng bị chặn cứng. Tunnel rớt thì không gì ra khỏi máy. App không lách bằng cách bám adapter mạng; thiết bị LAN có thể mất kết nối. Chỉ process tunnel và traffic đã vào TUN được đi ra. Disconnect hoặc tắt switch này thì mạng mở lại.\n\nĐổi server giữ nguyên tunnel, chỉ reload outbound — không lộ địa chỉ thật trong khoảng trống. Tắt thì đổi server là stop rồi start lại."
+      },
+      "appearance": {
+        "title": "Giao diện"
+      },
+      "language": {
+        "title": "Ngôn ngữ"
+      },
+      "smart-connect": {
+        "title": "Smart connect",
+        "help": "Khi bật, Connect bỏ qua server vừa chọn. Nó lấy node điểm thấp và ổn định nhất từ 5 lần ping gần đây — timeout bị trừ điểm. Chưa đo lần nào thì ping cả list trước.\n\nMàn hình chính hiện “Smart connect” và quốc gia node tốt nhất. Không đổi server được khi đang bật. Tắt thì kết nối đúng server đã chọn. Kill switch đang bật và đang connected thì không ping mới; lần chọn sau dùng lịch sử sẵn có."
+      },
+      "fetch-interval": {
+        "title": "Auto subscription",
+        "help": "Tần suất app kéo lại danh sách node từ URL subscription. Không đổi server đang chọn.\n\nChọn khoảng thời gian, hoặc Tắt để chỉ cập nhật khi mở app hoặc bấm refresh trên Servers."
+      },
+      "manual-endpoint": {
+        "title": "Endpoint thủ công",
+        "subtitle": "Máy chủ VLESS Reality"
+      },
+      "rules": {
+        "title": "Quy tắc"
+      },
+      "remote-dns": {
+        "title": "DNS từ xa"
+      },
+      "logs": {
+        "title": "Nhật ký"
+      }
+    }
+  },
+  "logs": {
+    "enabled": "Bật",
+    "tabXray": "Xray",
+    "tabApp": "App",
+    "emptyTitle": "Chưa có nhật ký",
+    "emptyXray": "Kết nối VPN để ghi output của Xray core.",
+    "emptyApp": "Sự kiện app sẽ hiện sau lần mở hoặc kết nối tiếp theo.",
+    "disabledHint": "Bật nhật ký để xem output Xray và app."
+  },
+  "nested": {
+    "enabled": "Bật",
+    "mode": "Chế độ",
+    "modeValue": "Tự động",
+    "advanced": "Nâng cao",
+    "advancedSubtitle": "Thêm tùy chọn {title}",
+    "host": "Host",
+    "hostPlaceholder": "hostname hoặc IP",
+    "port": "Cổng",
+    "portPlaceholder": "443",
+    "remark": "Ghi chú",
+    "remarkPlaceholder": "Tên hiển thị",
+    "uuid": "UUID",
+    "uuidPlaceholder": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "sni": "SNI",
+    "sniPlaceholder": "Tên máy chủ TLS",
+    "publicKey": "Public key",
+    "publicKeyPlaceholder": "Reality public key",
+    "shortId": "Short ID",
+    "shortIdPlaceholder": "không bắt buộc",
+    "spiderX": "Spider X",
+    "spiderXPlaceholder": "đường dẫn crawler tùy chọn (spx)",
+    "mldsa65Verify": "ML-DSA-65 verify",
+    "mldsa65VerifyPlaceholder": "khóa xác minh hậu lượng tử tùy chọn (pqv)",
+    "flow": "Flow",
+    "flowPlaceholder": "xtls-rprx-vision hoặc để trống",
+    "vlessHint": "Các trường phải khớp đúng với server: SNI (= dest Reality), public key, short ID (để trống chỉ khi server cho phép), và flow (xtls-rprx-vision nếu server dùng Vision).",
+    "portInvalid": "Cổng phải từ 1 đến 65535",
+    "shortIdInvalid": "Short ID phải là hex (0-9, a-f).",
+    "dnsHint": "Cả hai máy chủ dùng cho DNS đi proxy. DNS hệ thống dùng cho domain direct.",
+    "moreInfo": "Thêm thông tin",
+    "dnsFallback": "Dùng DNS hệ thống khi proxy chết",
+    "dnsFallbackHint": "Khi proxy không tới được, phân giải tên sẽ đi tới resolver mà OS đang dùng — thường là ISP. Đó đúng là đường rò mà tunnel này tồn tại để chặn. Để tắt trừ khi bạn cần mạng vẫn phân giải được khi không có proxy.",
+    "dnsServer": "DNS từ xa",
+    "dnsServerPlaceholder": "1.1.1.1",
+    "dnsServerBackup": "DNS dự phòng",
+    "dnsServerBackupPlaceholder": "8.8.8.8",
+    "save": "Lưu"
+  },
+  "appearance": {
+    "title": "Giao diện",
+    "theme": "Chủ đề",
+    "selected": "Đã chọn"
+  },
+  "theme": {
+    "options": {
+      "system": {
+        "title": "Hệ thống",
+        "subtitle": "Theo cài đặt máy"
+      },
+      "light": {
+        "title": "Sáng",
+        "subtitle": "Luôn dùng giao diện sáng"
+      },
+      "dark": {
+        "title": "Tối",
+        "subtitle": "Luôn dùng giao diện tối"
+      }
+    }
+  },
+  "language": {
+    "title": "Ngôn ngữ",
+    "listTitle": "Ngôn ngữ",
+    "selected": "Đã chọn",
+    "options": {
+      "system": {
+        "title": "Hệ thống",
+        "subtitle": "Theo ngôn ngữ máy"
+      },
+      "vi": {
+        "title": "Tiếng Việt",
+        "subtitle": "Luôn dùng tiếng Việt"
+      },
+      "en": {
+        "title": "English",
+        "subtitle": "Luôn dùng tiếng Anh"
+      }
+    }
+  },
+  "routing": {
+    "title": "Quy tắc",
+    "listTitle": "Thương hiệu",
+    "hint": "Gói domain/IP, không phải định tuyến theo từng app của OS. Khóa khi đang kết nối.",
+    "advancedTitle": "Dịch vụ {name}",
+    "advancedLink": "Nâng cao: {name}",
+    "advancedHint": "Dịch vụ cụ thể khớp trước umbrella của thương hiệu.",
+    "services": "Dịch vụ",
+    "reset": "Đặt lại mặc định gói",
+    "missingPack": "Không tìm thấy gói",
+    "actions": {
+      "direct": "Direct",
+      "proxy": "Proxy",
+      "block": "Block"
+    },
+    "packs": {
+      "google": { "title": "Google" },
+      "apple": { "title": "Apple" },
+      "meta": { "title": "Meta" },
+      "tiktok": { "title": "TikTok" },
+      "x": { "title": "X" },
+      "microsoft": { "title": "Microsoft" },
+      "amazon": { "title": "Amazon" },
+      "netflix": { "title": "Netflix" },
+      "telegram": { "title": "Telegram" },
+      "discord": { "title": "Discord" },
+      "openai": { "title": "OpenAI" },
+      "github": { "title": "GitHub" },
+      "china": { "title": "Trung Quốc" }
+    },
+    "servicesCatalog": {
+      "youtube": "YouTube",
+      "google-play": "Google Play",
+      "google-cn": "Google Trung Quốc",
+      "icloud": "iCloud",
+      "apple-cn": "Apple Trung Quốc",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp",
+      "messenger": "Messenger",
+      "tiktok": "TikTok",
+      "bytedance": "ByteDance",
+      "onedrive": "OneDrive"
+    }
+  },
+  "vpn": {
+    "connect": "Kết nối",
+    "connecting": "Đang kết nối",
+    "disconnect": "Ngắt kết nối",
+    "disconnecting": "Đang ngắt kết nối",
+    "disconnected": "Đã ngắt",
+    "connectingStatus": "Đang kết nối…",
+    "disconnectingStatus": "Đang ngắt kết nối…",
+    "connected": "Đã kết nối",
+    "switching": "Đang đổi máy chủ…",
+    "selected": "Đã chọn",
+    "errorNeedAdmin": "TUN cần quyền Quản trị. Bấm kết nối để cấp quyền administrator.",
+    "errorNeedAdminMac": "Tunnel cần mật khẩu quản trị. Bấm kết nối và chấp nhận hộp thoại của macOS.",
+    "errorUacCancelled": "Bạn đã hủy quyền Quản trị. Bấm kết nối để cấp quyền lại.",
+    "errorUacCancelledMac": "Bạn đã hủy hộp thoại quản trị. Bấm kết nối để cấp quyền lại.",
+    "errorTunnelNoResponse": "Proxy không trả lời. Kiểm tra địa chỉ máy chủ và máy chủ còn hoạt động.",
+    "errorTunnelRefused": "Máy chủ từ chối kết nối. Kiểm tra public key, short ID, và cài đặt phiên bản client trên server.",
+    "errorTunnelUnreachable": "Không ra được internet qua tunnel. Kiểm tra máy chủ và mạng của bạn.",
+    "errorTunnelHijacked": "Kiểm tra kết nối không tới được internet. Nếu đây là Wi-Fi cần đăng nhập, hãy đăng nhập rồi kết nối lại.",
+    "errorRealityFailed": "Bắt tay VLESS Reality bị từ chối. Kiểm tra public key, short ID, SNI, và cài đặt phiên bản client trên server.",
+    "errorWintunMissing": "Thiếu wintun.dll cạnh xray.exe. Hãy chạy scripts/fetch-xray.ps1 rồi build lại.",
+    "errorVpnDenied": "Bạn đã từ chối quyền VPN. Hãy cho phép kết nối VPN khi Android hỏi.",
+    "errorVpnDeniedIos": "Bạn đã từ chối quyền VPN. Hãy cho phép xraybox thêm cấu hình VPN, rồi kết nối lại.",
+    "errorNeedAdminIos": "Chưa cài hồ sơ VPN. Bấm kết nối và chấp nhận hộp thoại VPN của iOS.",
+    "errorIosMemory": "Xray và file geo không vừa bộ nhớ extension VPN trên iPhone. Dừng lại và quyết định cách cắt asset trước khi kết nối.",
+    "errorSidecarMissing": "Không thấy sidecar Xray. Trên Windows chạy scripts/fetch-xray.ps1. Trên macOS chạy scripts/fetch-xray.sh. Trên Android chạy scripts/fetch-xray-android.ps1. Trên iPhone chạy scripts/build-xray-ios.sh.",
+    "errorNoUnderlyingIface": "Không tìm thấy Wi-Fi hoặc 4G để Xray thoát tunnel. Bật mạng rồi thử lại.",
+    "errorHelperInstallFailed": "Không cài được helper đặc quyền. Hãy chấp nhận hộp thoại quản trị rồi thử lại.",
+    "errorHelperUnavailable": "Helper đặc quyền chưa chạy. Bấm kết nối để khởi động nó.",
+    "noProfile": "Hãy thêm subscription hoặc lưu endpoint VLESS Reality trước khi kết nối.",
+    "smartConnect": "Smart connect",
+    "smartConnectStayMessage": "Bạn đang ở chế độ smart connect. Muốn tiếp tục smart connect?"
+  }
+}

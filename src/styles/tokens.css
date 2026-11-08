@@ -1,0 +1,103 @@
+:root {
+  --color-bg: #f2f2f7;
+  --color-surface: #fff;
+  --color-text: #111;
+  --color-muted: #6e6e73;
+  --color-subtle: #8e8e93;
+  --color-border: #e5e5ea;
+  --color-press: #d1d1d6;
+  --color-accent: #007aff;
+  --color-success: #64e184;
+  --color-danger: #ff3b30;
+  --color-switch-off: #e5e5ea;
+  --font-sans: Inter, Avenir, Helvetica, Arial, sans-serif;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-pill: 999px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 20px;
+  --touch: 44px;
+  --row-min: 56px;
+  --shell-sidebar-width: 240px;
+  --shell-content-max: 720px;
+  --shell-tab-clearance: 24px;
+  --breakpoint-desktop: 900px;
+  --glass-fill: rgb(255 255 255 / 26%);
+  --glass-fill-strong: rgb(255 255 255 / 42%);
+  --glass-border: rgb(255 255 255 / 62%);
+  --glass-highlight: rgb(255 255 255 / 86%);
+  --glass-edge: rgb(0 0 0 / 8%);
+  --glass-blur: 44px;
+  --glass-saturate: 190%;
+  --glow-on: #30d158;
+  --tab-bg: rgb(255 255 255 / 0%);
+  --tab-blur: 28px;
+  --tab-border: rgb(255 255 255 / 55%);
+  --tab-inset: rgb(255 255 255 / 50%);
+  --tab-glow: rgb(255 255 255 / 0.48);
+  --tab-active: #007aff;
+  --tab-lens: rgb(255 255 255 / 16%);
+  --sidebar-active: #eaf2ff;
+  --connect-off-fg: #9f9f9f;
+  --scrollbar-size: 6px;
+  --scrollbar-thumb: rgb(0 0 0 / 28%);
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --color-bg: #000;
+  --color-surface: #1c1c1e;
+  --color-text: #f5f5f7;
+  --color-muted: #98989d;
+  --color-subtle: #8e8e93;
+  --color-border: #38383a;
+  --color-press: #2c2c2e;
+  --color-accent: #0a84ff;
+  --color-success: #30d158;
+  --color-danger: #ff453a;
+  --color-switch-off: #6d6d6e;
+  --glass-fill: rgb(28 28 30 / 36%);
+  --glass-fill-strong: rgb(44 44 46 / 56%);
+  --glass-border: rgb(255 255 255 / 16%);
+  --glass-highlight: rgb(255 255 255 / 22%);
+  --glass-edge: rgb(0 0 0 / 40%);
+  --tab-bg: rgb(28 28 30 / 0%);
+  --tab-border: rgb(255 255 255 / 14%);
+  --tab-inset: rgb(255 255 255 / 12%);
+  --tab-glow: rgba(210, 210, 214, 0.06); 
+  --tab-active: #007aff;
+  --tab-lens: rgb(255 255 255 / 10%);
+  --sidebar-active: rgb(10 132 255 / 18%);
+  --connect-off-fg: #e5e5ea;
+  --scrollbar-thumb: rgba(255, 255, 255, 0.28);
+  color-scheme: dark;
+}
+
+html,
+body,
+#app {
+  height: 100vh;
+  margin: 0;
+  overscroll-behavior-x: none;
+}
+
+html {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  touch-action: pan-x pan-y;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input {
+  font: inherit;
+}

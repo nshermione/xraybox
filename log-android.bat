@@ -1,0 +1,1 @@
+adb shell run-as io.github.xraybox cat files/xraybox-boot.log

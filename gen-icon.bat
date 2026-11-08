@@ -1,0 +1,1 @@
+pnpm tauri icon src-tauri/icons/icon.svg

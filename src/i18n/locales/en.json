@@ -1,0 +1,299 @@
+{
+  "nav": {
+    "home": "VPN",
+    "settings": "Settings"
+  },
+  "home": {
+    "title": "xraybox",
+    "server": "Server",
+    "session": "Session",
+    "duration": "Duration",
+    "usage": "Data used",
+    "quota": "Plan data",
+    "currentIp": "Current IP",
+    "vpnIp": "VPN IP",
+    "change": "Change",
+    "placeholder": "—",
+    "scan": "Scan QR",
+    "qrImage": "QR Image",
+    "pickImage": "Choose image",
+    "add": "Add subscription",
+    "addSubscription": "Add subscription",
+    "subscriptionUrl": "Subscription URL",
+    "subscriptionUrlPlaceholder": "https://",
+    "paste": "Paste",
+    "ping": "Ping",
+    "addLink": "Add link",
+    "cancel": "Cancel",
+    "yes": "Yes",
+    "no": "No",
+    "noServerTitle": "No servers",
+    "noServerMessage": "Add a server first. Scan a QR code or paste a subscription link."
+  },
+  "servers": {
+    "title": "Servers",
+    "emptyTitle": "No servers",
+    "emptyMessage": "Add a subscription or a manual endpoint to get started.",
+    "recent": "Recent",
+    "all": "All servers",
+    "country": "Country",
+    "profiles": "Profiles",
+    "other": "Other",
+    "refreshPing": "Refresh ping",
+    "updateSubscription": "Update subscription",
+    "update": "Update",
+    "ping": "Ping",
+    "updating": "Updating subscription…",
+    "pinging": "Measuring ping…",
+    "clearProfiles": "Clear",
+    "clearConfirmTitle": "Delete all profiles?",
+    "clearConfirmMessage": "This removes every imported server. The subscription URL stays so you can update it again.",
+    "clearConfirm": "Delete all"
+  },
+  "subscription": {
+    "invalidUrl": "Enter an http:// or https:// subscription URL.",
+    "invalidQr": "That QR code is not a subscription URL.",
+    "noCamera": "Camera is unavailable. Choose an image instead.",
+    "clipboardDenied": "Could not read the clipboard."
+  },
+  "fetchInterval": {
+    "title": "Auto subscription",
+    "listTitle": "Update subscription",
+    "selected": "Selected",
+    "options": {
+      "3h": {
+        "title": "Every 3 hours",
+        "subtitle": "Refresh the node list three times a day"
+      },
+      "1d": {
+        "title": "Every day",
+        "subtitle": "Refresh once a day"
+      },
+      "7d": {
+        "title": "Every 7 days",
+        "subtitle": "Refresh once a week"
+      },
+      "off": {
+        "title": "Off",
+        "subtitle": "Only when you open the app or tap refresh"
+      }
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "groups": {
+      "general": "General",
+      "network": "Network",
+      "diagnostics": "Diagnostics"
+    },
+    "items": {
+      "auto-connect": {
+        "title": "Auto connect",
+        "subtitle": "Connect when the app starts"
+      },
+      "start-boot": {
+        "title": "Start on boot",
+        "subtitle": "Open the app when Windows signs in",
+        "subtitleAndroid": "Reconnect the VPN when the phone starts",
+        "subtitleIos": "Bring the VPN back after unlock if it was still connected"
+      },
+      "kill-switch": {
+        "title": "Internet kill switch",
+        "help": "When on, the internet is fail-closed. If the tunnel drops, nothing leaves this machine. Apps cannot skip the tunnel by binding a network adapter, and devices on the LAN may stop responding. Only the tunnel process and traffic already inside it can go out. Disconnecting, or turning this off, opens the network again.\n\nSwitching servers keeps the tunnel up and reloads only the outbound, so your real address does not appear in the gap. With this off, a switch is a full stop then start."
+      },
+      "appearance": {
+        "title": "Appearance"
+      },
+      "language": {
+        "title": "Language"
+      },
+      "smart-connect": {
+        "title": "Smart connect",
+        "help": "When on, Connect ignores the server you last tapped. It picks the node with the lowest, most stable score from the last 5 pings — timeouts count against a node. If nothing has been measured yet, it pings the list first.\n\nThe home screen shows “Smart connect” and the best node’s country. You cannot change servers while it is on. Turn it off to connect to the server you selected. While the kill switch is on and you are connected, new pings are skipped, so the next pick uses the history it already has."
+      },
+      "fetch-interval": {
+        "title": "Auto subscription",
+        "help": "How often the app pulls a fresh node list from your subscription URL. It does not change which server you connect to.\n\nPick an interval, or Off to update only when you open the app or tap refresh on Servers."
+      },
+      "manual-endpoint": {
+        "title": "Manual endpoint",
+        "subtitle": "VLESS Reality server"
+      },
+      "rules": {
+        "title": "Rules"
+      },
+      "remote-dns": {
+        "title": "Remote DNS"
+      },
+      "logs": {
+        "title": "Logs"
+      }
+    }
+  },
+  "logs": {
+    "enabled": "Enabled",
+    "tabXray": "Xray",
+    "tabApp": "App",
+    "emptyTitle": "No log yet",
+    "emptyXray": "Connect the VPN to capture Xray core output.",
+    "emptyApp": "App events will appear here after the next launch or connect.",
+    "disabledHint": "Turn on logging to view Xray and app output."
+  },
+  "nested": {
+    "enabled": "Enabled",
+    "mode": "Mode",
+    "modeValue": "Auto",
+    "advanced": "Advanced",
+    "advancedSubtitle": "More {title} options",
+    "host": "Host",
+    "hostPlaceholder": "hostname or IP",
+    "port": "Port",
+    "portPlaceholder": "443",
+    "remark": "Remark",
+    "remarkPlaceholder": "Display name",
+    "uuid": "UUID",
+    "uuidPlaceholder": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "sni": "SNI",
+    "sniPlaceholder": "TLS server name",
+    "publicKey": "Public key",
+    "publicKeyPlaceholder": "Reality public key",
+    "shortId": "Short ID",
+    "shortIdPlaceholder": "optional",
+    "spiderX": "Spider X",
+    "spiderXPlaceholder": "optional crawler path (spx)",
+    "mldsa65Verify": "ML-DSA-65 verify",
+    "mldsa65VerifyPlaceholder": "optional post-quantum verify key (pqv)",
+    "flow": "Flow",
+    "flowPlaceholder": "xtls-rprx-vision or empty",
+    "vlessHint": "These fields must match the server exactly: SNI (= Reality dest), public key, short ID (empty only if the server allows it), and flow (xtls-rprx-vision when the server uses Vision).",
+    "portInvalid": "Port must be between 1 and 65535",
+    "shortIdInvalid": "Short ID must be hex (0-9, a-f).",
+    "dnsHint": "Both servers are used for proxied DNS. Local system DNS is used for direct domains.",
+    "moreInfo": "More information",
+    "dnsFallback": "Fall back to system DNS",
+    "dnsFallbackHint": "When the proxy is unreachable, name lookups go to whatever resolver the OS is using — usually your ISP. That is the leak this tunnel exists to prevent. Leave off unless you need the network to keep resolving without the proxy.",
+    "dnsServer": "Remote DNS",
+    "dnsServerPlaceholder": "1.1.1.1",
+    "dnsServerBackup": "Backup DNS",
+    "dnsServerBackupPlaceholder": "8.8.8.8",
+    "save": "Save"
+  },
+  "appearance": {
+    "title": "Appearance",
+    "theme": "Theme",
+    "selected": "Selected"
+  },
+  "theme": {
+    "options": {
+      "system": {
+        "title": "System",
+        "subtitle": "Match the device setting"
+      },
+      "light": {
+        "title": "Light",
+        "subtitle": "Always use light appearance"
+      },
+      "dark": {
+        "title": "Dark",
+        "subtitle": "Always use dark appearance"
+      }
+    }
+  },
+  "language": {
+    "title": "Language",
+    "listTitle": "Language",
+    "selected": "Selected",
+    "options": {
+      "system": {
+        "title": "System",
+        "subtitle": "Match the device language"
+      },
+      "vi": {
+        "title": "Tiếng Việt",
+        "subtitle": "Always use Vietnamese"
+      },
+      "en": {
+        "title": "English",
+        "subtitle": "Always use English"
+      }
+    }
+  },
+  "routing": {
+    "title": "Rules",
+    "listTitle": "Brands",
+    "hint": "Domain and IP packs. This is not per-app OS routing. Editors lock while connected.",
+    "advancedTitle": "{name} services",
+    "advancedLink": "Advanced: {name}",
+    "advancedHint": "More specific services match before the brand umbrella.",
+    "services": "Services",
+    "reset": "Reset to pack default",
+    "missingPack": "Pack not found",
+    "actions": {
+      "direct": "Direct",
+      "proxy": "Proxy",
+      "block": "Block"
+    },
+    "packs": {
+      "google": { "title": "Google" },
+      "apple": { "title": "Apple" },
+      "meta": { "title": "Meta" },
+      "tiktok": { "title": "TikTok" },
+      "x": { "title": "X" },
+      "microsoft": { "title": "Microsoft" },
+      "amazon": { "title": "Amazon" },
+      "netflix": { "title": "Netflix" },
+      "telegram": { "title": "Telegram" },
+      "discord": { "title": "Discord" },
+      "openai": { "title": "OpenAI" },
+      "github": { "title": "GitHub" },
+      "china": { "title": "China" }
+    },
+    "servicesCatalog": {
+      "youtube": "YouTube",
+      "google-play": "Google Play",
+      "google-cn": "Google China",
+      "icloud": "iCloud",
+      "apple-cn": "Apple China",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp",
+      "messenger": "Messenger",
+      "tiktok": "TikTok",
+      "bytedance": "ByteDance",
+      "onedrive": "OneDrive"
+    }
+  },
+  "vpn": {
+    "connect": "Connect",
+    "connecting": "Connecting",
+    "disconnect": "Disconnect",
+    "disconnecting": "Disconnecting",
+    "disconnected": "Disconnected",
+    "connectingStatus": "Connecting…",
+    "disconnectingStatus": "Disconnecting…",
+    "connected": "Connected",
+    "switching": "Switching…",
+    "selected": "Selected",
+    "errorNeedAdmin": "TUN needs Administrator. Click Connect to grant administrator access.",
+    "errorNeedAdminMac": "The tunnel needs an administrator password. Click Connect and approve the macOS prompt.",
+    "errorUacCancelled": "Administrator approval was cancelled. Click Connect to grant it again.",
+    "errorUacCancelledMac": "The administrator prompt was cancelled. Click Connect to approve it again.",
+    "errorTunnelNoResponse": "The proxy did not respond. Check the server address and that it is online.",
+    "errorTunnelRefused": "The server rejected the connection. Check the public key, short ID, and the server's client-version setting.",
+    "errorTunnelUnreachable": "Could not reach the internet through the tunnel. Check the server and your network.",
+    "errorTunnelHijacked": "The connectivity check did not reach the internet. Sign in to the Wi-Fi network if this is a captive portal, then connect again.",
+    "errorRealityFailed": "The VLESS Reality handshake was rejected. Check public key, short ID, SNI, and the server's client-version setting.",
+    "errorWintunMissing": "wintun.dll is missing next to xray.exe. Run scripts/fetch-xray.ps1, then rebuild.",
+    "errorVpnDenied": "VPN permission was denied. Allow the VPN connection when Android asks.",
+    "errorVpnDeniedIos": "VPN permission was denied. Allow xraybox to add a VPN configuration, then connect again.",
+    "errorNeedAdminIos": "The VPN profile is not installed yet. Connect and allow the iOS VPN prompt.",
+    "errorIosMemory": "Xray and the geo files did not fit in the iPhone VPN extension memory limit. Stop and decide how to trim assets before connecting.",
+    "errorSidecarMissing": "Xray sidecar not found. On Windows run scripts/fetch-xray.ps1. On macOS run scripts/fetch-xray.sh. On Android run scripts/fetch-xray-android.ps1. On iPhone run scripts/build-xray-ios.sh.",
+    "errorNoUnderlyingIface": "Could not find Wi-Fi or mobile data to keep Xray off the tunnel. Turn on a network and try again.",
+    "errorHelperInstallFailed": "Could not install the privileged helper. Approve the administrator prompt and try again.",
+    "errorHelperUnavailable": "The privileged helper is not running. Click Connect to start it.",
+    "noProfile": "Add a subscription or save a VLESS Reality endpoint before connecting.",
+    "smartConnect": "Smart connect",
+    "smartConnectStayMessage": "You are in smart connect mode. Continue smart connect?"
+  }
+}

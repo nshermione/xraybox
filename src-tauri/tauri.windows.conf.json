@@ -1,0 +1,8 @@
+{
+  "bundle": {
+    "externalBin": ["binaries/xray"],
+    "resources": {
+      "binaries/wintun.dll": "wintun.dll"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+*.tsbuildinfo
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Android / signing (in case they land outside gen/android)
+*.jks
+*.keystore
+src-tauri/gen/android/app/src/main/jniLibs/**/*.so
+
+# iOS VPN binaries (build with scripts/build-xray-ios.sh and scripts/build-hev-ios.sh)
+src-tauri/ios/Vendor/**
+src-tauri/ios/.tauri/
+src-tauri/ios/plugin/.build/
+
+# Sing-box sidecar binaries (fetch with scripts/fetch-singbox.ps1)
+src-tauri/binaries/*.exe
+src-tauri/resources/ruleset/*.srs
+src-tauri/resources/ruleset/*.dat
+!src-tauri/resources/ruleset/geoip-cn.srs
+!src-tauri/resources/ruleset/geosite-cn.srs
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Sideload APKs built by scripts/android-release.sh
+/release/
